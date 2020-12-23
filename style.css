@@ -1,0 +1,178 @@
+.container{
+  width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.main{
+  margin-bottom: 20px;
+  border: 1px solid #1D1D1B;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Asap', sans-serif;
+  line-height: 1.5;
+  border-radius:6px;
+  color: #fff;
+  max-width: 600px;
+  margin: 20px auto;
+}
+.icontemp{
+  font-size: 30px;
+}
+body{
+  background-color: #1D1D1B;
+  min-height: auto;
+
+}
+h4{
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  color: #FFF;
+}
+.submitform{
+  text-align: center;
+}
+
+.mdl-textfield{
+   max-width: 300px;
+    width: calc(100% - 100px);
+}
+#deletebutton{
+  display: none;
+  margin-bottom: 40px;
+}
+
+.main{
+  display: none;
+}
+.extra{
+  height: 20px;
+}
+.mdl-spinner{
+  display: none;
+}
+.dummy{
+  position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+#splashscreen {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color:white;
+    z-index: 9999;
+   
+  }
+#splash{
+font-family: 'Cairo', sans-serif;
+color:#000;
+position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #263238;
+   color: white;
+   text-align: center;
+}
+#footerlink>a{
+  
+  color: #fff !important;
+  text-decoration: none !important; 
+}
+#footerlink{
+  padding-top: 15px;
+  font-size: 16px;
+  font-family: 'Asap', sans-serif;
+}
+
+#footerlink>a>img{
+  max-width: 20px;
+}
+#footerlink>a>span{
+  vertical-align: middle;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #4E5860;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  text-align: center;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #FFF;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #FFF;
+  text-decoration: none;
+  cursor: pointer;
+}
+#Addplace{
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 25px;
+    cursor: pointer;
+}
+#deletebutton{
+  margin: 0 auto;
+  background-color: #e84e40;
+  color: #fff;
+}
+.heading{
+  color: #FFF;
+  font-size: 20px;
+  font-family: 'Cairo', sans-serif;
+}
+.info{
+  font-size: 25px;
+  text-align: center;
+  color: #000;
+  margin-top: 60px;
+  display: none;
+  color: #FFF;
+  font-family: 'Cairo', sans-serif;
+}
+.delete_icon{
+float: right;
+margin-top: -28px;
+cursor: pointer;
+color: #C62828;
+}

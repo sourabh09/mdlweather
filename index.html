@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="robots" content="index,follow" />
+<meta name="description" content="A MDL weather web app with local storage by QA." />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css" rel="stylesheet" />
+<script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD98TIgEeJkaKcioLj-s2hgbBeWCV1tUQE"></script>
+<link href="https://fonts.googleapis.com/css?family=Cairo|Damion|Asap" rel="stylesheet">
+<script type="text/javascript" src="https://sourabh09.github.io/mdlweather/crypto.js"></script>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-amber.min.css" />
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.min.js"></script>
+<script src="script.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="apple-touch-icon" href="weather.png">
+<!-- <link rel="shortcut icon" type="image/png" href="weather.png"> -->
+<!-- <meta name="apple-mobile-web-app-capable" content="yes"> -->
+<title>MDL Weather</title>
+</head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-142853646-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-142853646-1');
+</script>
+<body onload="splashscreenout ()">
+    <div id="splashscreen">
+      <h4 id="splash">MDL Weather ⛅</h4>
+    </div>
+  <h4>MDL Weather ⛅</h4>
+  <div class="info">Press + to add place.</div>
+     <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="heading">Enter Place...</div>
+    <form action="javascript:void(0);">
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+    <input style="color:#FFF" class="mdl-textfield__input"  type="text" id="place" placeholder="" size="50" autocomplete="off">
+    <label class="mdl-textfield__label" type="submit" for="sample3">Enter Place...</label>
+  </div><br>
+  <button style="color:#FFF" onclick="insert()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+    SUBMIT
+  </button>
+  </form>
+
+  </div>
+
+</div>
+
+<div class="dummy">
+  <div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
+</div>
+ <div id="place" class="container"></div>
+ <div class="deletebutton">
+ <button id="deletebutton" onclick="deleteplaces()" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+  Delete places
+</button>
+</div>
+<button id="Addplace" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+  <i class="material-icons">add</i>
+</button>
+ 
+<div class="extra"></div>
+
+<!-- <div class="footer">
+      <p id="footerlink"> <a target="_blank" href="https://linkedin.com/in/sourabh-mathur-20630223"><img src="linkedin.png">  <span> Sourabh Mathur </span></a></p>
+</div> -->
+
+
+</body>
+</html>
